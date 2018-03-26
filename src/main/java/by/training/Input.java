@@ -17,10 +17,10 @@ public class Input {
         String val;
         ArrayList<Integer> list = new ArrayList<Integer>();
         while (true) {
-            System.out.println("Please input numbers and press enter to add a motion in a canceCode. Input \"q\" to exit");
+            System.out.println("Please input numbers and press enter to add a motion in a canceCode. Input any other symbol to exit");
             Scanner in = new Scanner(System.in);
              val = in.nextLine();
-            if (val.equals("q")) {
+            if (new Parser(val).checkVal().equals("q")) {
                 break;
             }
             list.add(Integer.valueOf(val));
