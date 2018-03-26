@@ -8,6 +8,8 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+      for(int i:new Input().danceCode){
+          System.out.println(i);
+      }
     }
 }
