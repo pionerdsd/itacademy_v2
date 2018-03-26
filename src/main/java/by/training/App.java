@@ -8,6 +8,8 @@ public class App
 {
     public static void main( String[] args )
     {
-        new Dance(new Dancer(new int [1])).dance();
+         int [] danceCode = new int[]{1, 2, 3, 4, 5};
+
+        new Dance(new Dancer(danceCode)).dance();
     }
 }
