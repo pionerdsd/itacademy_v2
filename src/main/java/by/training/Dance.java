@@ -23,13 +23,9 @@ public class Dance {
             } else {
                 forward(danceCode[i]);
             }
-
-            System.out.print("i = " + i + " ");
-            System.out.print("n[" + i + "] = " + danceCode[i] + " ");
-            System.out.print("position = " + position + " ");
-            System.out.println("steps = " + steps);
         }
     }
+
     private void forward(int num) {
         if (position + num <= danceCode.length) {
             steps += num;
@@ -40,6 +36,7 @@ public class Dance {
         }
 
     }
+
     private void back(int num, int i) {
 
         if (i != 0) {
