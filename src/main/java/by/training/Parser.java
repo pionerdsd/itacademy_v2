@@ -4,7 +4,7 @@ package by.training;
  * Created by dmurashko on 26.03.2018.
  */
 public class Parser {
-   public String val;
+   private String val;
 
     public Parser(String val) {
         this.val = val;
